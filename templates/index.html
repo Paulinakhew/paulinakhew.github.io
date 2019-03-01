@@ -253,8 +253,7 @@
             .dropbtn {
                 background-color: rgb(78, 82, 82);
                 color: white;
-                padding: 16px;
-                margin-left: 35px;
+                padding: 8px;
                 font-size: 16px;
                 border: none;
             }
@@ -278,60 +277,63 @@
             .dropdown:hover .dropbtn {
                 background-color: grey;
             }
+            .container_inline {
+                display: flex;
+                justify-content: space-between;
+            }
         </style>
     </head>
     <body>
         <header>
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a class="navbar-brand" href="">Paulina Grace Khew</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul id="user-references">
-                        <form class="form-inline mt-2 mt-md-0">
-                            <li><a href="#projects" class="external-link-list">Coding Projects</a></li>
-                            <li><a href="#coding-experience" class="external-link-list">Coding Experience</a></li>
-                            <li><a href="#work-experience" class="external-link-list">Work Experience</a></li>
-                            <li><a href="#volunteer-experience" class="external-link-list">Volunteer and Leadership Experience</a></li>
-                            <div class="dropdown">
-                                <button class="dropbtn">Change background colour</button>
-                                <div class="dropdown-content">
-                                    <a><button type="button" class="bluebutton" onclick="blue()">Blue</button></a>
-                                    <a><button type="button" class="pinkbutton" onclick="pink()">Pink</button></a>
-                                    <a><button type="button" class="lavenderbutton"onclick="lavender()">Lavender</button></a>
-                                    <a><button type="button" class="silverbutton"onclick="silver()">Grey</button></a>
-                                    <a><button type="button" class="greenbutton" onclick="green()">Green</button></a>
-                                    <script>
-                                    function blue() {
-                                        document.body.style.backgroundColor = "LightCyan";
-                                    }
-                                    function pink() {
-                                        document.body.style.backgroundColor = "Snow";
-                                    }
-                                    function lavender() {
-                                        document.body.style.backgroundColor = "Lavender";
-                                    }
-                                    function silver() {
-                                        document.body.style.backgroundColor = "GainsBoro";
-                                    }
-                                    function green() {
-                                        document.body.style.backgroundColor = "HoneyDew";
-                                    }
-                                    document.body.style.backgroundColor = "Azure";
-                                    </script>
-                                    <hr class="featurette-divider">
+                <div class="container_inline">
+                    <div><a class="navbar-brand" href="">Paulina Grace Khew</a></div>
+                    
+                        <ul id="user-references">
+                            <form class="form-inline mt-2 mt-md-0">
+                                <div><li><a href="#projects" class="external-link-list">Coding Projects</a></li></div>
+                                <div><li><a href="#coding-experience" class="external-link-list">Coding Experience</a></li></div>
+                                <div><li><a href="#work-experience" class="external-link-list">Work Experience</a></li></div>
+                                <div><li><a href="#volunteer-experience" class="external-link-list">Volunteer and Leadership Experience</a></li></div>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Change background colour</button>
+                                    <div class="dropdown-content">
+                                        <a><button type="button" class="bluebutton" onclick="blue()">Blue</button></a>
+                                        <a><button type="button" class="pinkbutton" onclick="pink()">Pink</button></a>
+                                        <a><button type="button" class="lavenderbutton"onclick="lavender()">Lavender</button></a>
+                                        <a><button type="button" class="silverbutton"onclick="silver()">Grey</button></a>
+                                        <a><button type="button" class="greenbutton" onclick="green()">Green</button></a>
+                                        <script>
+                                        function blue() {
+                                            document.body.style.backgroundColor = "LightCyan";
+                                        }
+                                        function pink() {
+                                            document.body.style.backgroundColor = "Snow";
+                                        }
+                                        function lavender() {
+                                            document.body.style.backgroundColor = "Lavender";
+                                        }g
+                                        function silver() {
+                                            document.body.style.backgroundColor = "GainsBoro";
+                                        }
+                                        function green() {
+                                            document.body.style.backgroundColor = "HoneyDew";
+                                        }
+                                        document.body.style.backgroundColor = "Azure";
+                                        </script>
+                                        <hr class="featurette-divider">
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
-                    </ul>
-                    <ul class="navbar-nav mr-auto"></ul>
-                    <form class="form-inline mt-2 mt-md-0">
-                        <a href="https://www.linkedin.com/in/paulinakhew/" target="_blank" class="external-link bounce"><img src="static/linkedin_logo.png" width="30" height="30" hspace="3"></a>
-                        <a href="https://github.com/Paulinakhew" class="external-link bounce" target="_blank"><img src="static/github_logo.png" width="30" height="30" hspace="3"></a>
-                        <a href="mailto:pgkhew@edu.uwaterloo.ca" class="external-link bounce" target="_blank"><img src="static/email_logo.png" width="30" height="30" hspace="3"></a>
-                    </form>
-                </div>
+                                <div><form class="form-inline mt-2 mt-md-0">
+                                        <a href="https://www.linkedin.com/in/paulinakhew/" target="_blank" class="external-link bounce"><img src="static/linkedin_logo.png" width="30" height="30" hspace="3"></a>
+                                        <a href="https://github.com/Paulinakhew" class="external-link bounce" target="_blank"><img src="static/github_logo.png" width="30" height="30" hspace="3"></a>
+                                        <a href="mailto:pgkhew@edu.uwaterloo.ca" class="external-link bounce" target="_blank"><img src="static/email_logo.png" width="30" height="30" hspace="3"></a>
+                                    </form></div>
+                            </form>
+                        </ul>
+                
+                    </div>
+                
             </nav>
         </header>
         <main role="main">
@@ -662,7 +664,7 @@
             <hr class="featurette-divider">                
             <footer class="container">
                 <p class="float-right"><a href="" class="external-link">Back to top</a></p>
-                <p class="copyright">&copy; Paulina Khew 2018 </p>
+                <p class="copyright">&copy; Paulina Khew 2019 </p>
             </footer>
         </main>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
