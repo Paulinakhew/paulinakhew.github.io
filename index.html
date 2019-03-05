@@ -57,7 +57,238 @@
         <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
         <link href="https://getbootstrap.com/docs/4.1/examples/carousel/carousel.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+        a.external-link-list {
+            color: grey;
+        }
+        a.external-link-list:hover {
+            color: turquoise;
+        }
+        a.external-link {
+            color: rgb(33, 134, 180);
+            opacity: 0.8;
+        }
+        .bluebutton,
+        .pinkbutton,
+        .lavenderbutton,
+        .silverbutton,
+        .greenbutton {
+            background-color:	#E0FFFF; 
+            border: none;
+            color: grey;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            width: 100%;
+            }
+        .pinkbutton {
+            background-color: #FFFAFA; 
+            }
+        .lavenderbutton {
+            background-color: #E6E6FA;
+            }
+        .silverbutton {
+            background-color: #DCDCDC; 
+            }
+        .greenbutton {
+            background-color: 	#F0FFF0; 
+            }
+        a.external-link:hover {
+            color: black;
+        }
+        .copyright {
+            color: grey;
+        }
+        .description1 {
+            color: black;
+        }
+        .description3 {
+            color: rgb(17, 111, 148);
+        }
+        .intro1 {
+            background-color: rgb(219, 213, 213);
+            opacity: 0.8;
+        }
+        .intro2 {
+            background-color: rgb(63, 105, 141);
+            opacity: 0.8;
+        }
+        .intro3 {
+            background-color: rgb(201, 190, 190);
+            opacity: 0.8;
+        }
+        img.hackerrank {
+            opacity: 0.80;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        ul#user-references li {
+            display: inline;
+            margin-left: 25px;
+        }
+        h2.projects {
+            color: rgba(12, 125, 129, 0.808);
+        }
+        h2.volunteer-experience {
+            color: rgb(33, 134, 180);
+        }
+        h2.coding-experience {
+            color: rgb(33, 134, 180);
+        }
+        h2.work-experiences {
+            color: rgb(91, 141, 153);
+        }
+        h2.featurette-heading {
+            color: rgb(33, 134, 180);
+        }
+        a.navbar-brand:hover {
+            font-family: cursive;
+            -webkit-animation: color-change 1s infinite;
+            -moz-animation: color-change 1s infinite;
+            -o-animation: color-change 1s infinite;
+            -ms-animation: color-change 1s infinite;
+            animation: color-change 1s infinite;
+        }
+        @-webkit-keyframes color-change {
+            0% { color: rgb(81, 201, 195); }
+            50% { color: white; }
+            100% { color: rgb(81, 201, 195); }
+        }
+        @-moz-keyframes color-change {
+            0% { color: rgb(81, 201, 195); }
+            50% { color: white; }
+            100% { color: rgb(81, 201, 195); }
+        }
+        @-ms-keyframes color-change {
+            0% { color: rgb(81, 201, 195); }
+            50% { color: white; }
+            100% { color: rgb(81, 201, 195); }
+        }
+        @-o-keyframes color-change {
+            0% { color: rgb(81, 201, 195);; }
+            50% { color: white; }
+            100% { color: rgb(81, 201, 195);; }
+        }
+        @keyframes color-change {
+            0% { color: rgb(81, 201, 195);; }
+            50% { color: white; }
+            100% { color: rgb(81, 201, 195);; }
+        }
+        .bounce:hover {
+            display: inline-block;
+            position: relative;
+            -moz-animation: bounce 0.5s infinite linear;
+            -o-animation: bounce 0.5s infinite linear;
+            -webkit-animation: bounce 0.5s infinite linear;
+            animation: bounce 0.5s infinite linear;
+        }
+        @-webkit-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @-moz-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @-o-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @-ms-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        .image {
+            background-image: url("static/qor.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 550px;
+            background-image: url("static/qor.jpg");
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 75%;
+        }
+        .caption {
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-size: 14px;
+            font-style: italic;
+            line-height: 14px;
+            margin-left: 20px;
+            padding: 10px;
+            position: relative;
+            top: 80%;
+            width: 60%;
+            background-color: white;
+            color: black;
+            opacity: 0.75;
+        }
+        .header-fixed {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .fixed-photo-scroll {
+            background-image: url("static/times_square_new_york.jpg");
+            min-height: 750px; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1000px;
+        }
+        .dropbtn {
+            background-color: rgb(78, 82, 82);
+            color: white;
+            padding: 8px;
+            font-size: 16px;
+            margin-left: 15px;
+            margin-right: 15px;
+            border: none;
+        }
+        .dropdown {
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 50px;
+            max-height: 5px;
+            box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: grey;
+        }
+        .container_inline {
+            display: flex;
+            justify-content: space-between;
+        }
+        </style>
     </head>
     <body>
         <header>
