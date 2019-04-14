@@ -73,7 +73,7 @@
         .lavenderbutton,
         .silverbutton,
         .greenbutton {
-            background-color:	#E0FFFF; 
+            background-color:#E0FFFF; 
             border: none;
             color: grey;
             padding: 10px 15px;
@@ -84,16 +84,16 @@
             width: 100%;
             }
         .pinkbutton {
-            background-color: #FFFAFA; 
+            background-color:#FFFAFA; 
             }
         .lavenderbutton {
-            background-color: #E6E6FA;
+            background-color:#E6E6FA;
             }
         .silverbutton {
-            background-color: #DCDCDC; 
+            background-color:#DCDCDC; 
             }
         .greenbutton {
-            background-color: 	#F0FFF0; 
+            background-color:#F0FFF0; 
             }
         a.external-link:hover {
             color: black;
@@ -270,19 +270,10 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            min-width: 50px;
+            max-width: 50px;
             max-height: 5px;
             box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
             z-index: 1;
-        }
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .dropdown:hover .dropbtn {
-            background-color: grey;
         }
         .container_inline {
             display: flex;
@@ -319,13 +310,16 @@
                     </div>
                     <form class="form-inline mt-2 mt-md-0">
                         <div class="dropdown">
-                            <button class="dropbtn">Change background colour</button>
-                            <div class="dropdown-content">
-                                <a><button type="button" class="bluebutton" onclick="blue()">Blue</button></a>
-                                <a><button type="button" class="pinkbutton" onclick="pink()">Pink</button></a>
-                                <a><button type="button" class="lavenderbutton"onclick="lavender()">Lavender</button></a>
-                                <a><button type="button" class="silverbutton"onclick="silver()">Grey</button></a>
-                                <a><button type="button" class="greenbutton" onclick="green()">Green</button></a>
+                            <button class="dropbtn btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                                Change background colour
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-content">
+                                <li><button type="button" class="bluebutton" onclick="blue()">Blue</button></li>
+                                <li><button type="button" class="pinkbutton" onclick="pink()">Pink</button></li>
+                                <li><button type="button" class="lavenderbutton"onclick="lavender()">Lavender</button></li>
+                                <li><button type="button" class="silverbutton"onclick="silver()">Grey</button></li>
+                                <li><button type="button" class="greenbutton" onclick="green()">Green</button></li>
                                 <script>
                                     function blue() {
                                         document.body.style.backgroundColor = "LightCyan";
@@ -595,6 +589,8 @@
                                         Toronto, Ontario
                                     </span>
                                 </span>
+                                <br>
+                                <br>
                             </p>
                         </div>
                         <div class="image">
