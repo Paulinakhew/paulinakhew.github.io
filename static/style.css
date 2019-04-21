@@ -156,11 +156,11 @@ a.navbar-brand:hover {
     100% { top: 0; }
 }
 .image {
-    background-image: url("static/qor.jpg");
+    background-image: url("qor.jpg");
     background-size: cover;
     background-position: center;
     height: 550px;
-    background-image: url("static/qor.jpg");
+    background-image: url("qor.jpg");
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -188,7 +188,7 @@ a.navbar-brand:hover {
     background-size: cover;
 }
 .fixed-photo-scroll {
-    background-image: url("static/times_square_new_york.jpg");
+    background-image: url("times_square_new_york.jpg");
     min-height: 750px; 
     background-attachment: fixed;
     background-position: center;
