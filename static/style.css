@@ -37,6 +37,7 @@ a.external-link {
     }
 a.external-link:hover {
     color: black;
+    cursor: url("paw.ICO"), auto;	
 }
 .copyright {
     color: grey;
@@ -160,7 +161,6 @@ a.navbar-brand:hover {
     background-size: cover;
     background-position: center;
     height: 550px;
-    background-image: url("qor.jpg");
     margin-left: auto;
     margin-right: auto;
     display: block;
