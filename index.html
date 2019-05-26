@@ -86,52 +86,21 @@
                         <a href="mailto:pgkhew@edu.uwaterloo.ca" class="external-link bounce" target="_blank"><img src="static/email_logo.png" width="30" height="30" hspace="3"></a>
                     </div>
                     <form class="form-inline mt-2 mt-md-0">
-                        <div class="dropdown">
-                            <button class="dropbtn btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">
-                                Change background colour
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu dropdown-content">
-                                <li><button type="button" class="bluebutton" onclick="random()">Blue</button></li>
-                                <li><button type="button" class="pinkbutton" onclick="pink()">Pink</button></li>
-                                <li><button type="button" class="lavenderbutton"onclick="lavender()">Lavender</button></li>
-                                <li><button type="button" class="silverbutton"onclick="silver()">Grey</button></li>
-                                <li><button type="button" class="greenbutton" onclick="green()">Green</button></li>
-                                <script>
-                                    var funcAr = ['blue', 'pink', 'lavender', 'silver', 'green'];
-                                    var upper = funcAr.length;
-                                    function getRandInt(u) {
-                                        return Math.floor(Math.random() * Math.floor(u));
+                        <button class="btn btn-outline-secondary" onclick="random()" type="button">
+                            Change background colour
+                            <span class="caret"></span>
+                            <script>
+                                function random() {
+                                    var colours = ['GainsBoro', 'GhostWhite', 'HoneyDew', 'Lavender', 'LightBlue', 'LightCyan', 'LightPink', 'LightSteelBlue', 'PaleTurquoise', 'Pink', 'PowderBlue', 'Snow', 'Thistle'];
+                                    var max = colours.length;
+                                    function getRandInt(max) {
+                                        return Math.floor(Math.random() * Math.floor(max));
                                     }
-                                    var functionName = funcAr[getRandInt(upper)];
-                                    // call the function through window["functionName"]();
-                                    function blue() {
-                                        document.body.style.backgroundColor = "LightCyan";
-                                    }
-                                    function pink() {
-                                        document.body.style.backgroundColor = "Snow";
-                                    }
-                                    function lavender() {
-                                        document.body.style.backgroundColor = "Lavender";
-                                    }
-                                    function silver() {
-                                        document.body.style.backgroundColor = "GainsBoro";
-                                    }
-                                    function green() {
-                                        document.body.style.backgroundColor = "HoneyDew";
-                                    }
-                                    function random() {
-                                        var colours = ['LightCyan', 'Snow', 'Lavender', 'GainsBoro', 'HoneyDew'];
-                                        function getRandInt(u) {
-                                            return Math.floor(Math.random() * Math.floor(u));
-                                        }
-                                        document.body.style.backgroundColor = colours[getRandInt(5)];
-                                    }
-                                    document.body.style.backgroundColor = "Azure";
-                                </script>
-                                <hr class="featurette-divider">
-                            </div>
-                        </div>
+                                    document.body.style.backgroundColor = colours[getRandInt(max)];
+                                }
+                                document.body.style.backgroundColor = "Azure";
+                            </script>
+                        </button>
                     </form>
                 </div>
             </nav>
