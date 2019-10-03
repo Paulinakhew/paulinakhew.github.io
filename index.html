@@ -57,6 +57,20 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
         <link href="https://getbootstrap.com/docs/4.1/examples/carousel/carousel.css" rel="stylesheet">
         <link href="static/style.css" type="text/css" rel="stylesheet">
+        <script>
+            
+            var i = 0;
+            var txt = 'I am a first year co-op student studying Systems Design Engineering at the University of Waterloo.';
+            var speed = 50;
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            </script>
     </head>
     <body>
         <header>
@@ -107,7 +121,7 @@
         </header>
 
         <main role="main">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" onmouseover="typeWriter()">
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -119,7 +133,8 @@
                         <div class="container">
                             <div class="carousel-caption text-left">
                                 <h1 class="description1">Hi, I'm Paulina!</h1>
-                                <p class="description1 intro1"><strong>I am a first year co-op student studying <em>Systems Design Engineering</em> at the University of Waterloo.</strong></p>
+                                <p class="description1 intro1" id="demo"></strong></p>
+                                <p id="demo"></p> <!--I can do on mouseover for this-->
                                 <p><a class="btn btn-lg btn-primary"  class="external-link" target="_blank" href="https://drive.google.com/file/d/1wXM1bbSfmAya19sfIlBKmhb7jyKX4MUB/view?usp=sharing" role="button">See my Résumé</a></p>
                             </div>
                         </div>
@@ -129,7 +144,7 @@
                         <div class="container">
                             <div class="carousel-caption">
                                 <h1 class="description2">Coding Experience</h1>
-                                <p class="description2 intro2"><strong>Over the summer, I did an 8-week Python Full-stack Immersive program at Byte Academy in New York.</strong></p>
+                                <p class="description2 intro2" id="demo"><strong>Over the summer, I did an 8-week Python Full-stack Immersive program at Byte Academy in New York.</strong></p>
                                 <p><a class="btn btn-lg btn-primary" href="https://github.com/Paulinakhew" class="external-link" target="_blank" role="button">Check out my GitHub</a></p>
                             </div>
                         </div>
