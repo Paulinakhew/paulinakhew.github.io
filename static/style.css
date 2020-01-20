@@ -8,6 +8,12 @@ a.external-link {
     color: rgb(33, 134, 180);
     opacity: 0.8;
 }
+.grayscale {
+    filter:brightness(75%);
+}
+.grayscale-more {
+    filter:brightness(100%);
+}
 .bluebutton,
 .pinkbutton,
 .lavenderbutton,
@@ -37,28 +43,13 @@ a.external-link {
     }
 a.external-link:hover {
     color: black;
-    cursor: url("toad.cur"), auto;	
+    cursor: url("sushi.cur"), auto;	
 }
 .copyright {
     color: grey;
 }
-.description1 {
-    color: black;
-}
-.description3 {
-    color: rgb(17, 111, 148);
-}
-.intro1 {
-    background-color: rgb(219, 213, 213);
-    opacity: 0.8;
-}
-.intro2 {
-    background-color: rgb(63, 105, 141);
-    opacity: 0.8;
-}
-.intro3 {
-    background-color: rgb(201, 190, 190);
-    opacity: 0.8;
+.white-text {
+    color: white;
 }
 img.hackerrank {
     opacity: 0.80;
