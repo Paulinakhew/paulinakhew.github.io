@@ -76,15 +76,15 @@ h2.work-experiences {
 h2.featurette-heading {
     color: rgb(33, 134, 180);
 }
-a.navbar-brand:hover {
+a.navbar-brand {
     font-family: cursive;
-    -webkit-animation: color-change 1s infinite;
+    /* -webkit-animation: color-change 1s infinite;
     -moz-animation: color-change 1s infinite;
     -o-animation: color-change 1s infinite;
     -ms-animation: color-change 1s infinite;
-    animation: color-change 1s infinite;
+    animation: color-change 1s infinite; */
 }
-@-webkit-keyframes color-change {
+/* @-webkit-keyframes color-change {
     0% { color: rgb(81, 201, 195); }
     50% { color: white; }
     100% { color: rgb(81, 201, 195); }
@@ -108,7 +108,7 @@ a.navbar-brand:hover {
     0% { color: rgb(81, 201, 195);; }
     50% { color: white; }
     100% { color: rgb(81, 201, 195);; }
-}
+} */
 .bounce:hover {
     display: inline-block;
     position: relative;
