@@ -210,3 +210,15 @@ a.navbar-brand {
     display: flex;
     justify-content: space-between;
 }
+img.featurette-image:hover {
+    opacity: 0.5;
+}
+.table-image {
+    td, th {
+        vertical-align: middle;
+    }
+}
+
+table {
+    width: 100%;
+}
