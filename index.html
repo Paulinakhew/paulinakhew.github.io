@@ -57,7 +57,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
         <link href="https://getbootstrap.com/docs/4.1/examples/carousel/carousel.css" rel="stylesheet">
         <link href="static/style.css" type="text/css" rel="stylesheet">
-        <script>
+        <script type="text/javascript">
             var i = 0;
             var txt = 'I am a second year co-op student studying Systems Design Engineering at the University of Waterloo.';
             var speed = 50;
@@ -76,9 +76,48 @@
                 }
                 document.body.style.backgroundColor = colours[getRandInt(colours)];
             }, false);
+
+            function mousehandler(e) {
+                var myevent = (isNS) ? e : event;
+                var eventbutton = (isNS) ? myevent.which : myevent.button;
+                if ((eventbutton == 2) || (eventbutton == 3)) return false;
+            }
+            document.oncontextmenu = mousehandler;
+            document.onmousedown = mousehandler;
+            document.onmouseup = mousehandler;
+            function disableCtrlKeyCombination(e) {
+                var forbiddenKeys = new Array("a", "s", "c", "x","u");
+                var key;
+                var isCtrl;
+                if (window.event) {
+                    key = window.event.keyCode;
+                    //IE
+                    if (window.event.ctrlKey)
+                        isCtrl = true;
+                    else
+                        isCtrl = false;
+                }
+                else {
+                    key = e.which;
+                    //firefox
+                    if (e.ctrlKey)
+                        isCtrl = true;
+                    else
+                        isCtrl = false;
+                }
+                if (isCtrl) {
+                    for (i = 0; i < forbiddenKeys.length; i++) {
+                        //case-insensitive comparation
+                        if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                            return false;
+                        }
+                    }
+                }
+                return true;
+            }
         </script>
     </head>
-    <body>
+    <body oncontextmenu="return false">
         <header>
             <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #97bdce;">
                 <a class="navbar-brand" href="">Paulina Grace Khew</a>
