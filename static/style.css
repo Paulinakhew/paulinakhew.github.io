@@ -43,7 +43,7 @@ a.external-link {
     }
 a.external-link:hover {
     color: black;
-    cursor: url("sushi.cur"), auto;	
+    cursor: url("pacman_ghost.cur"), auto;	
 }
 .copyright {
     color: grey;
