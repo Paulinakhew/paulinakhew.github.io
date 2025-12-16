@@ -1,0 +1,7 @@
+
+body {
+  cursor: url("../static/cat.png"), auto;
+}
+a:hover, button:hover {
+  cursor: url('../static/piano.cur'), pointer;
+}
