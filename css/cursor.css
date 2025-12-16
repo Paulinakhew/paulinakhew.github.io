@@ -1,7 +1,7 @@
 
 body {
-  cursor: url("../static/shell.png"), auto;
+  cursor: url("../static/rilakkuma.png"), auto;
 }
 a:hover, button:hover {
-  cursor: url('../static/otter.png'), pointer;
+  cursor: url('../static/kiiroitori.png'), pointer;
 }
